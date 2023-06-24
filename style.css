@@ -30,6 +30,16 @@ p {
 }
 article {
     margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+#projectTitle{
+  font-family: 'Slabo 13px', serif;
+  font-size: 48px;
+}
+div #Projects{
+  float: right;
 }
 .transparent {
     background-color: rgba(255, 255, 255, 0.2);
@@ -37,16 +47,10 @@ article {
 #title {
     text-shadow: red .5px .5px;
 }
-.carbon-fibre {
-    margin: 1rem;
-    width: 100%;
-    height: 200px;
-    background: radial-gradient(black 15%,transparent 16%) 0 0, radial-gradient(black 15%,transparent 16%) 8px 8px, radial-gradient(rgba(255,255,255,0.1)15%,transparent 20%) 0 1px, radial-gradient(rgba(255,255,255,0.1) 15%,transparent 20%) 8px 9px;
-    background-color: #282828;
-    background-size: 16px 16px;
-}
+
+
 .slabo{
-    font-family: 'Slabo 13px', serif;
+  font-family: 'Slabo 13px', serif;
 	font-size: 1rem;
 }
 .self {
@@ -54,7 +58,7 @@ article {
     height:auto;
     border-radius: 20%;
 }
-.kenburns-top {
+.kenburns-top:hover {
 	-webkit-animation: kenburns-top 5s ease-out both;
 	        animation: kenburns-top 5s ease-out both;
 }
@@ -79,13 +83,15 @@ article {
 	-webkit-animation: text-shadow-pop-right 0.9s both;
 	        animation: text-shadow-pop-right 0.9s both;
 }
-.wobble-hor-bottom {
+.wobble-hor-bottom:hover {
 	-webkit-animation: wobble-hor-bottom 0.8s both;
 	        animation: wobble-hor-bottom 0.8s both;
-            animation-delay: 8s;
+            
 }
 #aboutme h4 {
 font-size: 1.5rem;
+font-family: 'Slabo 13px', serif;
+font-size: 2rem;
 }
 #aboutme article {
 /* display: flex; */
@@ -93,7 +99,7 @@ flex-wrap: wrap;
 flex-direction: row;
 }
 #aboutme p {
-    width: 75%;
+    width: fit-content;
 }
 #aboutme div {
     display: inline-flex;
@@ -105,6 +111,145 @@ flex-direction: row;
 	-webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
+.innerContainer{
+        border: #282828 2px solid;
+        display: flex;
+        flex-wrap: wrap;
+        width: 85%;
+        justify-content: space-evenly;
+}
+.container {
+        position: relative;
+        font-family: sans-serif;
+      }
+      
+      .container::before, .container::after {
+        content: "";
+        background-color: #fab5704c;
+        position: absolute;
+      }
+      
+      .container::before {
+        border-radius: 50%;
+        width: 6rem;
+        height: 6rem;
+        top: 30%;
+        right: 7%;
+      }
+      
+      .container::after {
+        content: "";
+        position: absolute;
+        height: 3rem;
+        top: 8%;
+        right: 5%;
+        border: 1px solid;
+      }
+      
+      .container .box {
+        width: 11.875em;
+        height: 15.875em;
+        padding: 1rem;
+        background-color: rgba(255, 255, 255, 0.074);
+        border: 1px solid rgba(255, 255, 255, 0.222);
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px);
+        border-radius: .7rem;
+        transition: all ease .3s;
+      }
+      
+      .container .box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: fit-content;
+      }
+      
+      .container .box .title {
+        font-size: 2rem;
+        font-weight: 500;
+        letter-spacing: .1em
+      }
+      
+      .container .box div strong {
+        display: block;
+        margin-bottom: .5rem;
+      }
+      
+      .container .box div p {
+        margin: 0;
+        font-size: .9em;
+        font-weight: 300;
+        letter-spacing: .1em;
+      }
+      
+      .container .box div span {
+        font-size: .7rem;
+        font-weight: 300;
+      }
+      
+      .container .box div span:nth-child(3) {
+        font-weight: 500;
+        margin-right: .2rem;
+      }
+      
+      .container .box:hover {
+        box-shadow: 0px 0px 20px 1px #ffbb763f;
+        border: 1px solid rgba(255, 255, 255, 0.454);
+      }
+      .button {
+        text-decoration: none;
+        position: relative;
+        border: none;
+        font-size: 14px;
+        font-family: inherit;
+        color: #fff;
+        width: auto;
+        height: 3em;
+        line-height: 2em;
+        text-align: center;
+        background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+        background-size: 300%;
+        border-radius: 30px;
+        z-index: 1;
+      }
+      
+      .button:hover {
+        animation: ani 8s linear infinite;
+        border: none;
+      }
+      
+      @keyframes ani {
+        0% {
+          background-position: 0%;
+        }
+      
+        100% {
+          background-position: 400%;
+        }
+      }
+      
+      .button:before {
+        content: '';
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        right: -5px;
+        bottom: -5px;
+        z-index: -1;
+        background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+        background-size: 400%;
+        border-radius: 35px;
+        transition: 1s;
+      }
+      
+      .button:hover::before {
+        filter: blur(20px);
+      }
+      
+      .button:active {
+        background: linear-gradient(32deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+      }
 /* ----------------------------------------------
  * Generated by Animista on 2023-6-22 11:19:37
  * Licensed under FreeBSD License.

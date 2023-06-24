@@ -7,6 +7,7 @@
         <title>Jay-Christopher-T</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link href="https://fonts.googleapis.com/css?family=Lato|Slabo+13px" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     </head>
@@ -16,11 +17,11 @@
             <header>
                 <nav>
                     <ul class="linklist">
-                        <li><a href="" class="text-shadow-pop-right">Home</a></li>
-                        <li><a href=""class="text-shadow-pop-right">About Me</a></li>
-                        <li><a href="" class="text-shadow-pop-right">Projects</a></li>
-                        <li><a href="" class="text-shadow-pop-right">Skills</a></li>
-                        <li><a href=""class="text-shadow-pop-right">Contact</a></li>
+                        <li class="animate__animated animate__rotateInDownLeft"><a href=""class="text-shadow-pop-right">Home</a></li>
+                        <li class="animate__animated animate__rotateInDownLeft"><a href=""class="text-shadow-pop-right">About Me</a></li>
+                        <li class="animate__animated animate__rotateInDownLeft"><a href=""class="text-shadow-pop-right">Projects</a></li>
+                        <li class="animate__animated animate__rotateInDownLeft"><a href=""class="text-shadow-pop-right">Skills</a></li>
+                        <li class="animate__animated animate__rotateInDownLeft"><a href=""class="text-shadow-pop-right">Contact</a></li>
                     </ul>
                 </nav>
             </header>
@@ -29,15 +30,51 @@
                     <h3 id="title" class="slabo wobble-hor-bottom">Jay-Christopher-T</h3>
                 </div>
                 <article id="aboutme">
-                    <h4 class="slabo">About Me</h4>
-                    <p id="clickToViewButton">click to view</p>
-                    <p id="clickToHideButton">click to hide</p>
-                    <div id = "blurb">
-                    <p class="slabo transparent">I am a third-year high school teacher in the process of changing career paths into the technology field. I've always had a passion for technology, video gaming, and web design. After hearing about Codecademy's front-end developer path from watching a youtube video. My goal is to find a career path that utilizes my diverse teaching abilities in conjuction with my front-end developer skills.</p>
-                    <img class="self" src="./resources/my picture.jpg">
+                    <div class="innerContainer" id="aboutMeBox">
+                        <h4 class="projectTitle animate__animated animate__bounce">About Me</h4>
+                        <p class="button" id="clickToViewButton">click to view</p>
+                        <p class="button" id="clickToHideButton">click to hide</p>
+                        <div id = "blurb">
+                        <p class="slabo transparent">I am a third-year high school teacher in the process of changing career paths into the technology field. I've always had a passion for technology, video gaming, and web design. After hearing about Codecademy's front-end developer path from watching a youtube video. My goal is to find a career path that utilizes my diverse teaching abilities in conjuction with my front-end developer skills.</p>
+                        <img class="self" src="./resources/my picture.jpg">
+                        </div>
                     </div>
                 </article>
-                <article></article>
+                <div class="projects-section">
+                    <div class="innerContainer" id="Projects">
+                        <span id="projectTitle">Projects</span>
+                        <div class="container" id="poemFiasco">
+                            <div class="box">
+                                <span class="title">Poem Fiasco</span>
+                                <div>
+                                    <strong>Codecademy JS project</strong>
+                                    <p>Front-end Engineer Path</p>
+                                    <span>Completed</span> <span>06/2023</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container" id="snapfitRobots">
+                            <div class="box">
+                                <span class="title">Snapfit Robots</span>
+                                <div>
+                                    <strong>Codecademy JS project</strong>
+                                    <p>Front-end Engineer Path</p>
+                                    <span>Completed</span> <span>06/2023</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container" id="photographyPage">
+                            <div class="box">
+                                <span class="title">Photography Page</span>
+                                <div>
+                                    <strong>Personal Project</strong>
+                                    <p>Front-end Engineer Path</p>
+                                    <span>Completed</span> <span>06/2023</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <aside></aside>
         </div>
