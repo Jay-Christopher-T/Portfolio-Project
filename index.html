@@ -17,21 +17,24 @@
             <header>
                 <nav>
                     <ul class="linklist">
-                        <li class="animate__animated animate__rotateInDownLeft"><a href=""class="text-shadow-pop-right">Home</a></li>
-                        <li class="animate__animated animate__rotateInDownLeft"><a href=""class="text-shadow-pop-right">About Me</a></li>
-                        <li class="animate__animated animate__rotateInDownLeft"><a href=""class="text-shadow-pop-right">Projects</a></li>
-                        <li class="animate__animated animate__rotateInDownLeft"><a href=""class="text-shadow-pop-right">Skills</a></li>
-                        <li class="animate__animated animate__rotateInDownLeft"><a href=""class="text-shadow-pop-right">Contact</a></li>
+                        <li class="animate__animated animate__rotateInDownLeft"><a href=""class="">Home</a></li>
+                        <li class="animate__animated animate__rotateInDownLeft"><a href=""class="">About Me</a></li>
+                        <li class="animate__animated animate__rotateInDownLeft"><a href=""class="">Projects</a></li>
+                        <li class="animate__animated animate__rotateInDownLeft"><a href=""class="">Skills</a></li>
+                        <li class="animate__animated animate__rotateInDownLeft"><a href=""class="">Contact</a></li>
                     </ul>
                 </nav>
             </header>
             <div id="content">
-                <div class="mainwrapper kenburns-top">
-                    <h3 id="title" class="slabo wobble-hor-bottom">Jay-Christopher-T</h3>
+                <div class="bigText">
+                    <p class="bg">Jay-Christopher-T</p>
                 </div>
+                <!-- <div class="mainwrapper kenburns-top">
+                    <h3 id="title" class="slabo wobble-hor-bottom">Jay-Christopher-T</h3>
+                </div> -->
                 <article id="aboutme">
                     <div class="innerContainer" id="aboutMeBox">
-                        <h4 class="projectTitle animate__animated animate__bounce">About Me</h4>
+                        <span id="projectTitle">About Me</span>
                         <p class="button" id="clickToViewButton">click to view</p>
                         <p class="button" id="clickToHideButton">click to hide</p>
                         <div id = "blurb">
@@ -73,6 +76,59 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div id="skillsSection">
+                    <div class="innerContainer" id="skillbar">
+                        <span id="projectTitle">Skills</span>
+                        <img src="./resources/svgrepo/css-file-web-svgrepo-com.svg">
+                        <img src="./resources/svgrepo/github-142-svgrepo-com.svg">
+                        <img src="./resources/svgrepo/html-5-logo-svgrepo-com.svg">
+                        <img src="./resources/svgrepo/javascript-155-svgrepo-com.svg">
+                        <img src="./resources/svgrepo/node-js-svgrepo-com.svg">
+                        <img src="./resources/svgrepo/vs-code-logo-microsoft-svgrepo-com.svg">
+                    </div>    
+                </div>
+                <div id="contactMe">
+                    <div class="innerContainer" id="contactBar">
+                        <span id="projectTitle">Contact Me</span>
+                        <!-- <form action="/index.html" method="POST">
+                        <label for="name">Name:</label>
+                        <br>
+                        <input id="name" type="text" name="name-field" value="">
+                        <br>
+                        <label for="email">Email:</label>
+                        <br>
+                        <input id="email" type="text" name="email" value="">
+                        <br>
+                        <label for="message">Message:</label>
+                        <br>
+                        <textarea id="message" name="message" rows="5" cols="30"></textarea> -->
+                        <div class="input-container">
+                            <input class="input" name="name" type="text" id="name">
+                            <label class="label" for="name">Enter Your Name</label>
+                            <div class="topline"></div>
+                            <div class="underline"></div>
+                            </div>
+                            <br>
+                        <div class="input-container">
+                            <input class="input" name="email" type="text" id="email">
+                            <label class="label" for="email">Enter Your Email</label>
+                            <div class="topline"></div>
+                            <div class="underline"></div>
+                            </div>
+                        <div class="input-container">
+                            <textarea class="input" name="textarea" id="textarea" rows="5" cols="30"></textarea>
+                            <label class="label" for="textarea">Message:</label>
+                            <div class="topline"></div>
+                            <div class="underline"></div>
+                            </div>
+                        <div class="input-container">
+                            <input class="input jello-horizontal" name="submit" type="submit" value="send">
+                            <div class="topline"></div>
+                            <div class="underline"></div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
